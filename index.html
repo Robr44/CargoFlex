@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Home</title>
 </head>
+
 <body>
-     <!-- Navbar content -->
+    <!-- Navbar content -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(36, 30, 78, 1);">
             <div class="container">
-                    <img src="./assets/logo.png" alt="CargoFlex Logo" width="80" height="70"></a>
+                <img src="./assets/logo.png" alt="CargoFlex Logo" width="80" height="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -20,7 +23,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
@@ -44,10 +47,72 @@
         </nav>
     </header>
 
+    <!-- Change Theme Button -->
+    <button id="BtnCambiarTema" class="btnTemas">🌙 Modo Oscuro</button>
+
+    <!-- Greeting Section-->
+    <div class="text-center my-4">
+        <h2 id="saludar">¡Bienvenido a CargoFlex!</h2>
+        <button id="btnSaludar" class="btn btn-success">Saludarme</button>
+    </div>
+
+    <!-- Services Information -->
+    <section class="servicios">
+        <h2>Servicios de Transporte de carga</h2>
+        <p>Cargo Flex ofrece servicios de Transporte de Carga Liviana, Carga Pesada y Transporte de Carga Toneladas <br>
+            para que puedas desplazar tu mercancías de un lugar a otro por todo El Salvador y Centro América.
+        </p>
+        <h3 id="servicios">Ofrecemos servicios de: </h3>
+    </section>
+
+    <!-- Cards conteiner -->
+    <section class="container-card">
+        <div class="card">
+            <img src="./assets/transporteliviano.jpg" alt="Transporte Liviano">
+            <div class="card-body">
+                <h3>Transporte Liviano</h3>
+                <p>Ideal para paquetería pequeña y entregas urbanas rápidas.</p>
+                <a href="#" class="btn btn-info">Ver más</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/transportepesado.jpg" alt="Transporte Pesado">
+            <div class="card-body">
+                <h3>Transporte Pesado</h3>
+                <p>Camiones para transportar cargas de alto volumen</p>
+                <a href="#" class="btn btn-info">Ver más</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/transporteToneladas.jpg" alt="Transporte Tonelada">
+            <div class="card-body">
+                <h3>Carga por Toneladas</h3>
+                <p>Soluciones para transporte masivo a nivel nacional.</p>
+                <a href="#" class="btn btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="text-center py-4 text-light" style="background-color: #241e4e;">
+        <p class="mb-1">©2025 CargoFlex, Todos los Derechos Reservados</p>
+
+        <div class="mb-2">
+            <a href="#" class="text-light text-decoration-none me-3">Contáctanos</a> |
+            <a href="#" class="text-light text-decoration-none me-3"> Sobre Nosotros</a> |
+            <a href="#" class="text-light text-decoration-none"> Términos y Condiciones</a>
+        </div>
+        <div>
+            <small>Correo: info1234@cargoflex.com | Tel: +503 2222-2222</small>
+        </div>
+    </footer>
+
+    <!-- Script index.js-->
+    <script src="index.js"></script>
     <!-- Script Navbar -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
