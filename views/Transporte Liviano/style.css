@@ -1,0 +1,15 @@
+
+.oscuro {
+  background-color: #000000;
+  color: white;
+}
+
+.oscuro .card {
+  background-color: #3a3a3a;
+  color: white;
+  border: 1px solid #444;
+}
+
+.oscuro .card img {
+  background-color: #2a2a2a;
+}
