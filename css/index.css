@@ -5,11 +5,13 @@ body {
   transition: all 0.3s ease;
   align-items: end;
 }
+
 /* Cambiar a Modo Oscuro */
 .dark-mode {
   background-color: #1c1c1c;
   color: white;
 }
+
 /* Estilo para el botón cambiar de cambiar Tema */
 .btnTemas{
   background-color: #f1f1f1;
@@ -55,7 +57,7 @@ body {
   box-shadow: 0 0.625rem 1.25rem rgba(255, 255, 255, 0.2);
 }
 
-.container-card .card h3{
+.container-card .card .card-body h3{
     font-family: 'Lora';
     color:#a93226
 }

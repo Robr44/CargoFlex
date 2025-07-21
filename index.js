@@ -63,7 +63,7 @@ btnSaludar.addEventListener("click", () => {
     por encima se cambia el color del texto y se vuelve a su color original al quitar el cursor.
 */
 resaltarLetra.addEventListener("mouseover", () => {
-  resaltarLetra.style.color = "#748CAB";
+  resaltarLetra.style.color = "#fc1c1cff";
 });
 
 resaltarLetra.addEventListener("mouseout", () => {
