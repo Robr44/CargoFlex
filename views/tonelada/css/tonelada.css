@@ -1,0 +1,68 @@
+/*---- Button Cambiar color de Fondo ----*/
+
+.Cambiarcolor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Cambiarcolor #btnCambiaFondo {
+  padding: 6px 12px;
+  background-color: #748CAB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.Cambiarcolor #btnCambiarFondo:hover {
+  background-color: #080101;
+}
+
+/*---- seccion transportes  ----*/
+.transportes {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+/*---- Cards container ----*/
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ---- Cards ---- */
+.container-card .card {
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container-card .card:hover {
+  transform: translateY(-0.625rem) scale(1.02);
+}
+
+.container-card .card h3 {
+  font-family: 'Lora';
+  color: #a93226
+}
+
+/* ---- Button mostrar Detalles ---- */
+.container-card .card .card-body .detalle {
+  display: none;
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}
