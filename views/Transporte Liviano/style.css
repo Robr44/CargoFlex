@@ -1,15 +1,18 @@
-
+/*Estilos para el modo oscuro*/
+/*Estilo para el body en modo oscuro*/
 .oscuro {
-  background-color: #000000;
+  background-color: #1a1919;
   color: white;
 }
 
+/*Estilo para las tarjeras en modo oscuro*/
 .oscuro .card {
   background-color: #3a3a3a;
   color: white;
   border: 1px solid #444;
 }
 
+/*Estilo para las imagenes en modo oscuro*/
 .oscuro .card img {
   background-color: #2a2a2a;
 }
