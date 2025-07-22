@@ -1,0 +1,63 @@
+/*  Modo Claro para body */
+body {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+  align-items: end;
+}
+
+/* Cambiar a Modo Oscuro */
+.dark-mode {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* Estilo para el botón cambiar de cambiar Tema */
+.btnTemas{
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+/*---- Servicios container ----*/
+.servicios{
+    padding: 0.2rem;
+    text-align: center;
+}
+
+/*---- Cards container ----*/
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; 
+  padding: 2.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ---- Cards ---- */
+.container-card .card {
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.container-card .card:hover{
+  transform: translateY(-0.625rem) scale(1.02);
+  box-shadow: 0 0.625rem 1.25rem rgba(255, 255, 255, 0.2);
+}
+
+.container-card .card .card-body h3{
+    font-family: 'Lora';
+    color:#a93226
+}

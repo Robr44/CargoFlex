@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Camiones Pesados</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: rgb(8, 2, 2);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #241e4e;
+            padding: 40px;
+            text-align: left;
+        }
+
+        header img {
+            height: 50px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #45007a;
+            margin-top: 30px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #7c00c8, #ff00cc);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(124, 0, 200, 0.4);
+        }
+
+        .boton:hover {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 0 8px 20px rgba(255, 0, 204, 0.6);
+            background: linear-gradient(45deg, #ff00cc, #7c00c8);
+        }
+
+        .boton::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .boton:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .contenedor-camiones {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .contenedor-camiones img {
+            max-width: 40%;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contenedor-camiones img:hover {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 0 8px 20px rgba(3, 36, 255, 0.6);
+        }
+
+        .contenedor-camiones img::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .contenedor-camiones img:hover::before {
+            width: 300px;
+            /* Corregido de 30px a 300px para un efecto más visible */
+            height: 300px;
+        }
+
+        .modal-content {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(36, 30, 78, 1);">
+            <div class="container">
+                <img src="/assets/logo.png" alt="CargoFlex Logo" width="80" height="70">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Livianos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pesados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Toneladas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="">Camiones Pesados</h1>
+        <p>
+            Los camiones pesados son vehículos diseñados para soportar grandes cargas y recorrer largas distancias con
+            alto rendimiento.
+        </p>
+        <ul>
+            <li>Hasta 30 toneladas de capacidad</li>
+            <li>Motor turbo diésel de alto desempeño</li>
+            <li>Cabina ergonómica y reforzada</li>
+            <li>Sistemas de freno neumático</li>
+        </ul>
+
+        <div class="contenedor-camiones">
+            <img src="/assets/pesado1.png" alt="Camión pesado 1" data-bs-toggle="modal" data-bs-target="#modalCamion1">
+            <img src="/assets/pesado2.png" alt="Camión pesado 2" data-bs-toggle="modal" data-bs-target="#modalCamion2">
+            <img src="/assets/pesado3.png" alt="Camión pesado 3" data-bs-toggle="modal" data-bs-target="#modalCamion3">
+            <img src="/assets/pesado4.png" alt="Camión pesado 4" data-bs-toggle="modal" data-bs-target="#modalCamion4">
+        </div>
+
+        <br />
+        <a href="/index.html" class="boton">Volver al inicio</a>
+    </main>
+
+    <footer class="text-center py-4 text-light" style="background-color: #241e4e;">
+        <p class="mb-1">©2025 CargoFlex, Todos los Derechos Reservados</p>
+        <div class="mb-2">
+            <a href="#" class="text-light text-decoration-none me-3">Contáctanos</a> |
+            <a href="#" class="text-light text-decoration-none me-3">Sobre Nosotros</a> |
+            <a href="#" class="text-light text-decoration-none">Términos y Condiciones</a>
+        </div>
+        <div>
+            <small>Correo: info1234@cargoflex.com | Tel: +503 2222-2222</small>
+        </div>
+    </footer>
+
+    <!-- Modal para Camión 1 -->
+    <div class="modal fade" id="modalCamion1" tabindex="-1" aria-labelledby="modalCamion1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCamion1Label">Información del Camión Pesado 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Capacidad: 25 toneladas</p>
+                    <p>Motor: Turbo Diésel 450 HP</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Camión 2 -->
+    <div class="modal fade" id="modalCamion2" tabindex="-1" aria-labelledby="modalCamion2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCamion2Label">Información del Camión Pesado 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Capacidad: 30 toneladas</p>
+                    <p>Motor: Turbo Diésel 500 HP</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Camión 3 -->
+    <div class="modal fade" id="modalCamion3" tabindex="-1" aria-labelledby="modalCamion3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCamion3Label">Información del Camión Pesado 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Capacidad: 28 toneladas</p>
+                    <p>Motor: Turbo Diésel 480 HP</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Camión 4 -->
+    <div class="modal fade" id="modalCamion4" tabindex="-1" aria-labelledby="modalCamion4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCamion4Label">Información del Camión Pesado 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Capacidad: 27 toneladas</p>
+                    <p>Motor: Turbo Diésel 470 HP</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
