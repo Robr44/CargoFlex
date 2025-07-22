@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="./css/tonelada.css" rel="stylesheet">
+    <title>Transporte de Toneladas</title>
+</head>
+
+<body>
+    <!-- Navbar content -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(36, 30, 78, 1);">
+            <div class="container">
+                <img src="../../assets/logo.png" alt="CargoFlex Logo" width="80" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Livianos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pesados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Toneladas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cambiar color de Fondo-->
+    <container class="Cambiarcolor">
+    <div style="margin: 20px;">
+        <label>Selecciona Fondo-Color: </label>
+        <input type="color" id="colorselect" value="#ffffff">
+        <button id="btnCambiaFondo">Cambiar Fondo</button>
+    </div>
+    </container>
+
+    <!-- Informacion de Transportes -->
+    <section class="transportes">
+        <h2>Transportes de Carga de Toneladas </h2>
+        <p>¿Necesitás mover carga pesada? <br>
+            ¡Nosotros te ayudamos! Alquilá con nosotros rastras, camiones de tonelada listos para cualquier tipo de
+            carga.<br>
+            Ofrecemos servicio confiable, precios competitivos y disponibilidad inmediata para que tu mercadería llegue
+            segura y a tiempo. <br>
+            ¡Tu carga en buenas manos, siempre!
+        </p>
+    </section>
+
+    <!-- Contenedor para Cards -->
+    <section class="container-card">
+        <!-- Cards -->
+        <div class="card">
+            <img src="./assets/cascadiaevolution.jpeg" alt="Cascadia Evolution">
+            <div class="card-body">
+                <h3>Freightliner Cascadia</h3>
+                <p>Año: 2021</p>
+                <p>Precio: 250/día</p><br>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Tractor potente para larga distancia, motor Detroit DD15 con transmisión automatizada, acoplado a
+                        un trailer tipo dry van de 53 ft para carga seca. Ideal para entregas nacionales. Fiabilidad y
+                        eficiencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/paystar.jpeg" alt="PayStar"><br>
+            <div class="card-body">
+                <h3>International PayStar</h3>
+                <p>Año: 2019</p>
+                <p>Precio: 320/día</p><br>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Tractor para servicios extremos (construcción, minería), acoplado a tráiler lowboy para
+                        transporte de maquinaria muy pesada. Configuración 6X4 o 8X6, excelente capacidad y potencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/volvo.jpeg" alt="Volvo">
+            <div class="card-body">
+                <h3>Volvo VNL 760</h3>
+                <p>Año: 2022</p>
+                <p>Precio: 300/día</p>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Confort premium con cabina dormitorio moderna, unido a tráiler refrigerado (reefer) de 53 ft.
+                        Ideal para transporte de alimentos perecederos o productos sensibles a temperatura.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/prostar.jpeg" alt="ProStar">
+            <div class="card-body">
+                <h3>International ProStar </h3>
+                <p>Año: 2019</p>
+                <p>Precio: 240/día</p>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Camión aerodinámico con motor Cummins ISX15, acoplado a tráiler curtainsider (cortina lateral) de
+                        fácil carga. Perfecto para paletizado o carga voluminosa. Buena eficiencia y manejo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/t800.jpeg" alt="Kenworth T800">
+            <div class="card-body">
+                <h3>Kenworth T800 </h3>
+                <p>Año: 2020</p>
+                <p>Precio: 280/día</p>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Tractor robusto de uso vocacional acoplado a tráiler plataforma abierta (flatbed) reforzado.
+                        Perfecto para maquinaria pesada, contenedores u objetos industriales de gran tamaño. Alta
+                        tracción y durabilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/tandem.jpeg" alt="Tandem">
+            <div class="card-body">
+                <h3>Tandem‑Axle Day Cab</h3>
+                <p>Año: 2020</p>
+                <p>Precio: 185-195/día</p><br>
+                <button class="btnDetalles btn btn-info">Más Detalles</button>
+                <div class="detalle">
+                    <p>Tractor de dos ejes tipo Day Cab (sin dormitorio), eficiente y económico para transporte
+                        regional. Se puede acoplar con trailer flatbed o refrigerado. Buena opción de corto a mediano
+                        alcance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Footer -->
+    <footer class="text-center py-4 text-light" style="background-color: #241e4e;">
+        <p class="mb-1">©2025 CargoFlex, Todos los Derechos Reservados</p>
+
+        <div class="mb-2">
+            <a href="#" class="text-light text-decoration-none">Contáctanos</a> |
+            <a href="#" class="text-light text-decoration-none"> Sobre Nosotros</a> |
+            <a href="#" class="text-light text-decoration-none"> Términos y Condiciones</a>
+        </div>
+        <div>
+            <small>Correo: info1234@cargoflex.com | Tel: +503 2222-2222</small>
+        </div>
+    </footer>
+
+    <!--- JavaScript tonelada.js-->
+    <script src="js/tonelada.js"></script>
+
+    <!-- Script Navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
