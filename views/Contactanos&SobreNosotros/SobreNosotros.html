@@ -43,8 +43,19 @@
             </div>
         </nav>
     </header>
-    <body>   
-        <h1>¡Fundadores! -CargoFlex</h1>     
+    <body>
+        <!-- cabecera del body -->
+        <div class="dropdown">
+            <button class="info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tema  
+            </button>
+            <ul class="dropdown-menu dropdown-menu">
+                <li><a class="dropdown-item" onclick="changeDark()" >Dark</a></li>
+                <li><a class="dropdown-item" onclick="changeWhite()">White</a></li>
+            </ul>
+        </div>
+        <h1>¡Fundadores! -CargoFlex</h1>
+        <!-- Fin de la cabecera del body -->
         <!-- Contenedor de Cards -->
         <section class="cards">
             <!-- Cards -->
@@ -88,21 +99,8 @@
                 </div>
             </div>
         </section>
-    </body>
-
-    <!-- Pie de pagina OPC 1-->  
-    <!-- <footer class="text-center py-4 text-light" style="background-color: #241e4e;">
-        <p class="mb-1">©2025 CargoFlex, Todos los Derechos Reservados</p>
-        <div class="mb-2">
-            <a href="#" class="text-light text-decoration-none me-3">Contáctanos</a> |
-            <a href="#" class="text-light text-decoration-none me-3">Sobre Nosotros</a> |
-            <a href="#" class="text-light text-decoration-none">Términos y Condiciones</a>
-        </div>
-        <div>
-            <small>Correo: info1234@cargoflex.com | Tel: +503 2222-2222</small>
-        </div>
-    </footer> -->
-     <!-- Pie de pagina OPC 2-->  
+    </body>  
+     <!-- Pie de pagina OPC 2--> 
     <footer class="text-center py-4 text-light" style="background-color: #241e4e;">
         <p class="mb-1">&copy;2025 CargoFlex | Todos los Derechos Reservados</p>
         <div class="mb-2">
