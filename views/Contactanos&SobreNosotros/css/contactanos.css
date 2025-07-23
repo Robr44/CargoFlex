@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+  background-color: white;
+  color: black
+
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.info{   color: #ffffff;
+      padding: 0px 10px;
+      font-family: 'Lora';
+      text-decoration: none;
+      background-color: #748CAB;
+      border-radius: 10px;
+      margin-top: 2%;
+      margin-left: 90%;
+}
